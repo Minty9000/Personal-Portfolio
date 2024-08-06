@@ -176,7 +176,7 @@ nav.sticky .navbar .menu a:hover{
   }
   .whole .main .text{
     margin-top: 100px;
-    width: 60%;
+    width: 80%;
     align-items: center;
     margin-bottom: 0px;
   }
@@ -185,5 +185,16 @@ nav.sticky .navbar .menu a:hover{
   }
   .whole .main input {
     width: 100%;
+  }
+  nav .navbar .menu .leave{
+    display: none;
+  }
+  nav .navbar .title{
+    font-weight: 500;
+    font-size: 23px;
+    color: #CC0033;
+  }
+  nav .navbar .media-icons img{
+    width: 110px;
   }
 }

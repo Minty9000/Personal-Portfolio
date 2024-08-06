@@ -158,8 +158,6 @@ nav.sticky .navbar .menu a:hover{
 }
 
 
-
-
 .about{
   padding-top:40px;
   background-color:var(--back-color);
@@ -194,10 +192,10 @@ section .Title span::after{
   object-fit: cover;
   border-radius: 12px;
 }
-.about .text-one{
+.about h1{
   color:#940101;
-  font-size:25px;
-  font-weight: 500;
+  font-size:23px;
+  font-weight:600;
   margin-bottom: 10px;
 }
 .about .right{
@@ -248,7 +246,6 @@ section .Title span::after{
   font-size: 25px;
   font-weight: 500;
   color: rgb(141, 0, 0);
-
 }
 .education .image img{
   display: flex;
@@ -498,8 +495,7 @@ margin-bottom: 30px;
   }
   .education .image img{
     order: 1;
-    width: 80%;
-    margin-left: 70px;
+    width: 100%;
   }
 }
 @media (max-width:1300px){
@@ -514,6 +510,10 @@ margin-bottom: 30px;
   }
   .block1{
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
   .block2{
     display: flex;
@@ -552,7 +552,7 @@ margin-bottom: 30px;
 }
 @media (max-width:950px){
   .Language{
-    width: 99%;
+    width: 95%;
   }
   .Language .reason{
     flex-direction: column;
@@ -577,7 +577,29 @@ margin-bottom: 30px;
   }
   nav .navbar .Title{
     font-weight: 500;
-    font-size: 25px;
+    font-size: 23px;
     color: #CC0033;
   }
+  nav .navbar .menu .leave{
+    display: none;
+  }
+  nav .navbar .media-icons img{
+    width: 110px;
+  }
+  .about .aimage img{
+    width:300px;
+    height: 350px;
+  }
+  .main .content{
+    text-align: center;
+  }
+  .about .text{
+    width:95%;
+  }
+  .block .body{
+    width: 90%;
+    margin-top: 0px;
+  margin-left: 0px;
+  margin-bottom: 0px;
+    }
 }

@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+:root{
+  --primary-color: #CC0033;
+    --black-color:#0E2431;
+    --white-color:#fff;
+    --back-color:#e4e1e1dc;
+
+}
+body{
+    font-family: 'Ubuntu', sans-serif;
+  }
+nav{
+    position: fixed;
+    width: 100%;
+    padding: 20px 0;
+  }
+  nav.sticky{
+    background-color:#CC0033;
+    padding:13px 0;
+    z-index: 1;
+  }
+  nav .navbar{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+  }
+  section .title{
+    display:flex;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+  nav .navbar .title{
+    font-weight: 500;
+    font-size: 35px;
+    color: #CC0033;
+  }
+  nav.sticky .navbar .title{
+    color: #fff;
+  }
+  nav .navbar .menu{
+    display: flex;
+    position: relative;
+  }
+  nav .navbar .menu li{
+    list-style: none;
+    margin: 0 8px;
+  }
+  nav .navbar .menu a{
+    font-size: 18px;
+    font-weight: 500;
+    color:var(--black-color);
+    padding:6px 0;
+    transition: all 0.4s ease;
+  }
+  nav .navbar .menu a:hover{
+    color: #CC0033;
+  }
+  nav.sticky .navbar .menu a:hover{
+    color: #fff;
+  }
+  .main{
+    height: auto;
+    width: 100%;
+    background: url("images/background_soft-grey.jpg") no-repeat;
+    background-size: cover;
+  }
+  .main .space{
+    height: 100px;
+  }
+  .main .start{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+  .main .desc{
+    width: 40%;
+  }
+  .main h1 {
+    color:var(--black-color);
+    font-size: 30px;
+    font-weight: 600;
+    position:relative;
+    padding-bottom:8px;
+    margin-bottom: 10px;
+    text-decoration: underline;
+    text-decoration-color: #CC0033;
+  }
+  .main button{
+    background-color: #CC0033;
+  color:#ffffff;
+  border-color: #CC0033;
+  border-radius: 6px;
+  font-size: 25px;
+  padding:6px 13px;
+  font-weight:400;
+  border:solid transparent;
+  transition: all 0.4s ease;
+  margin-top: 30px;
+  font-family: 'Ubuntu', sans-serif;
+  }
+  .main button:hover{
+    color:#CC0033;
+    background-color:#fff;
+    border-color: #CC0033;
+    cursor: pointer;
+  }
+  .main .admin{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .main .admin .desc{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .main .admin .pics{
+    display: flex;
+    width: 80%;
+    justify-content:space-between;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .main p{
+    font-size: 17px;
+    line-height: 23px;
+  }
+  @media (max-width:1000px){
+    .main .start{
+      flex-direction: column;
+    }
+    nav .navbar .menu a{
+      font-size: 16px;
+    }
+    nav .navbar .title{
+      font-weight: 500;
+      font-size: 23px;
+      color: #CC0033;
+    }
+    nav .navbar .media-icons img{
+      width: 110px;
+    }
+    .admin .leave{
+      display: none;
+    }
+    .main .desc{
+      width: 90%;
+    }
+    .main .admin .desc{
+      display: block;
+      width: 80%;
+      text-align:justify;
+    }
+    .main img{
+      width: 400px;
+    }
+    body, html {
+      overflow-x: hidden;
+  }
+  }

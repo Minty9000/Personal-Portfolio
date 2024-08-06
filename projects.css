@@ -167,6 +167,16 @@ nav.sticky .navbar .menu a:hover{
   display: block;
 }
 @media (max-width:1000px){
+  body, html {
+    overflow-x: hidden;
+}
+  .main .header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
   .header .title{
     font-size: 70px;
   }
@@ -177,5 +187,43 @@ nav.sticky .navbar .menu a:hover{
     font-size: 25px;
     font-weight: 500;
     color: #CC0033;
+  }
+  nav .navbar .title{
+    font-weight: 500;
+    font-size: 23px;
+    color: #CC0033;
+  }
+  nav .navbar .media-icons img{
+    width: 110px;
+  }
+  nav .navbar .menu .leave{
+    display: none;
+  }
+  nav{
+    width: 90%;
+  }
+  .main .catalog img{
+    width: 300px;
+  }
+  .catalog{
+    gap: 0px;
+    padding: 0px;
+  }
+  .catalog button{
+    border-radius: 6px;
+    font-size: 20px;
+    padding:4px 10px;
+  }
+  .catalog .links{
+    width: 80%;
+  }
+  .catalog p{
+    width: 75%;
+  }
+  .main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
 }
